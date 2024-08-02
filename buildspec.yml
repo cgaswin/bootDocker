@@ -12,7 +12,7 @@ phases:
   post_build:
     commands:
     - echo Build completed on `date`
-    - mvn package
+    - mvn -e -X package
     - mv target/bootDocker.jar bootDocker.jar
 artifacts:
   files:
